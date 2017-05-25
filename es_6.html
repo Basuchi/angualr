@@ -1,0 +1,248 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ES6</title>
+</head>
+
+    <body>
+        <header>Using ES 6</header>
+
+        
+
+        <!-- Load Traceur Compiler -->
+    <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+    <script src="https://google.github.io/traceur-compiler/bin/BrowserSystem.js"></script>
+    <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+
+
+        <script type="module">
+
+/*
+            if(true)    {
+// “let” keyword limits the variables accessibility upto a block, statement or expression.                
+                    let lx = 12;
+                    console.log("lx: " + lx); 
+
+                    var vx2 = 13;
+                    console.log("vx2 (inside): " +  vx2);
+                }
+
+                //console.log(lx); //ReferenceError: x is not defined. because of block type
+                console.log("vx2 (outside): " + vx2);
+
+
+            { let a = 2, b = 3, c;
+              console.log("a, b: ", a, b, c); 
+            }
+
+*/
+
+// Ex 2  :
+  
+/*  const a = 6;
+             if(true)    {
+                const a = 77; // life is within this block.
+                const b = 88;
+                console.log("inside @ a, b: " + a, b);
+              }   
+             //const a = 661;  // "MultipleErrors": Duplicate declaration
+              console.log("outside @ a: " +a);
+
+*/
+// Ex 3 :
+  /*         let circleArea = (pi, r) => {
+                          let area = pi * r * r;
+                          return area;
+                      }
+
+            let result = circleArea(3.14, 10);
+
+            console.log( "area: " , result); 
+            
+        //function circleArea(p, r) {...}
+        // var circleArea = function(p, r){...}
+*/
+//Ex 4 :
+/*
+          let array1 = [2,3,4];
+          let array2 = [1, ...array1, 5, 6, 7]; 
+
+          console.log(array2);
+		  
+*/	  
+//Ex 5:	
+
+/*
+	function outer1() =>
+            function inner(){
+                alert("inner");
+            }
+			inner();
+
+        }
+
+        outer1();
+		
+		
+		(()=>{
+    (() => {
+         alert("inner fn2");
+        
+    })() ;  
+    
+})();
+*/
+//Ex : 6
+/*
+    let ScopeLosingObj = {
+        text: "info from lexical scope",
+        run: function () {
+            setTimeout(function () {
+                console.log("ES5: ", this.text);
+            }, 1000);
+        }
+    };
+    ScopeLosingObj.run();
+		  
+		  
+		  
+		  
+		      let ScopePreservingObj = {
+        text: "info from lexical scope",
+        run: function () {
+            setTimeout(() => {
+                console.log("ES6: ", this.text);
+            }, 1000);
+        }
+    };
+
+    // shows "Property from lexical scope"
+    ScopePreservingObj.run();
+	*/
+//Ex 7:	
+/*
+	             class Person {
+
+                // equivalent of the PersonType constructor
+                constructor(name) {
+                    this.name = name;
+                }
+
+                // equivalent of PersonType.prototype.sayName
+                sayName() {
+                    console.log( "name: " + this.name);
+                }
+            }
+
+            let person = new Person("Basu");
+            person.sayName(); 
+	*/
+	
+	//Ex 8:
+	
+/*
+	class Student {
+
+                constructor(name, age) {
+                    this.name = name;
+                    this._age = age;
+                }
+                getName() {return this.name;}
+                setName(name){ this.name = name;}
+
+              
+                set age(value){this._age = value;}
+                get age() {return this._age;}
+  
+            } // eo class Student
+
+            class Person extends Student {
+
+                constructor(name, age, citizen){
+                    super(name, age);  
+                    this.citizen = citizen;
+                   
+
+                 }
+
+                getCitizen(){ return this.citizen;}
+                 getName(){ return super.getName();}
+  
+            }  // eo Person
+
+
+
+            var st = new Student("Ram", 25);
+            var p = new Person("Raj", 21, "India");
+
+            st.age = 12; //executes setter
+            console.log("age: " + st.age); //executes getter  
+*/
+//Ex 9: destructuring assignment syntax
+/*
+          let myArray = [1, 2, 3];
+          let a, b, c;
+
+          [a, b, c] = myArray; //array destructuring assignment syntax
+          console.log( "a: ", a);
+		  
+		  let [a3,...b3] = [12,13,14,15,16]; // let [...b3,a3] = [12,13,14,15] not working because it don't knw where to stop first values.
+		  let [a3, , , b3] = [......] ; middle values are ignored
+		  console.log("a3 :"+ a3);
+	*/
+
+	
+//Ex 10:
+/*
+            let object = {"name" : "Ram", "age" : 28, 
+                           "tel" : {"std" : "080", "num" : 22134541}
+                         };
+            let name, age, tel; // variable name should match to object
+
+            // note the brackets ( ...)  ;
+            ({name, age, tel} = object) ; //obj destructuring i.e. deep copy
+            console.log("name: ", name) ;
+	*/		
+			
+//Ex 11:
+
+      class Polygon {
+	  
+              constructor(length, width){
+                this.length = length;
+                this.width = width;
+              }
+              announce(){
+                console.log(this.width);
+              }
+              get area() {
+            return this.length * this.width;
+        }
+        }
+
+        let p = new Polygon(300, 400);
+        p.announce();
+//-----------------------------------------------------------
+
+        class Square extends Polygon {            
+              constructor(width){
+                super(width, width);
+              }       
+        }
+
+        let s = new Square(5);
+        s.announce();
+        console.log('The area of this square: ' + s.area);
+
+ //-------------------------------------------------
+         class Rectangle extends Polygon {
+
+        }
+
+        let r = new Rectangle(50, 60);
+        r.announce();
+	  
+        </script>
+    </body>
+</html>
