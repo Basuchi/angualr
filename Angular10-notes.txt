@@ -1,0 +1,59 @@
+vibu.training@gmal.com
+
+
+Angular 10
+============================================= 22/07/2021=====================================================
+1. its written in type script
+2. type script is type safe
+3. tsc is used to compile to the .ts file -> converts into .js file
+4. tsconfig.json in directory is used to compile all .ts file in that and its chile directory
+5. function in type script
+6. varible declaration
+7. call js file in html
+8. typeof() function to check the data type of a veriable.
+9. Data types
+10. typescript is EC6 verion of javascript
+11. ECMAScript is standerd of javascript , how to write or how the code should be. by commite 
+12.typesciprt developed and maintanined my Microsoft team
+13.typescript is not suppoerted by any browser, need to convert into .js 
+
+	hello.ts ----> tsc -w ------> hello.js(if no error)
+
+14. >tsc -v    -------------------->Version 4.3.5
+15. function with arguments
+	
+		function test(x:number,y:number){
+
+			return (x+y);
+		}
+
+		console.info(test(100,200));
+
+Arrays
+=============================================================== 23/07/2021===========================================
+1. var c:any[] = [10,20,30,40,"veeba"]; // heterogenious
+2. var arr:number[]=[1,2,3,45];
+3. push 		- to add elements at th end and returns the array
+4. pop			- to remove the last element of the array
+5. shift		- 
+6. unshift 		- 
+7. slice 		- 
+8. splice	 	-arr.splice(2,3);// from index 2, 3 elements will be removed
+				-arr.splice(2,3,111,222,333);// from intex 2, 3 elemenst will be removed and add 111,222,333 elemenst
+				-
+9. forEach		-sprint each elements of array
+				-arr.forEach(function(a,y){ // a is aray & y is index to recursive function
+
+				});
+10. map -  		- arr.map(function(a,y){
+					return a*100;
+				});
+
+				- it will return array of an elements and if you wish do any manupulations, you can for the array
+
+11. filter		- 	arr.filter(function(a,y){
+					return a>10;
+				});	
+				- return set of data(array) with matched condition
+
+

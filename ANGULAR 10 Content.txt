@@ -1,0 +1,161 @@
+ANGULAR 10
+--------------------
+
+1. Introduction of ANGULAR
+
+2. Typescript
+
+3. Node Modules
+
+4. Angular Framework Architecture
+
+5. Components, Modules
+
+6. Decorators
+
+7. Organize Routes using Modules
+
+8. Injectable Services.
+
+9. Directives & Custom Directives.
+
+10. Data Bindings.
+
+11. Events
+
+12. JSON with ANGULAR
+
+13. Reactive form and Template Driven Forms
+
+14. Bind form controls to a model
+
+15. Custom Pipe
+
+16. Routing (Single Page Application)
+
+17. Integration with Serverside Script
+
+18. Input and Ouput Data.
+
+19. Express JS API Services
+
+20. Mongo DB integration
+
+21. NPM Commands
+
+22. Observable
+
+23. Event Emitter
+
+24. Angular Animations
+
+25. Microsoft Visual Studio Code IDE
+
+26. Angular CLI
+
+27. ANGULAR Communication with NODE JS
+
+28. MEAN Stack Programming
+(DELETE, INSERT, SELECT, UPDATE with Mongo DB)
+
+29. Angular with Bootstrap
+
+30. Angular with AJAX
+
+31. Angular with JQuery
+
+32. Search Plugin
+
+33. Pagination with Data Grid
+
+34. Sorting Data Using Angular
+
+35. Angular Lifecycle Hooks
+
+36. Lazy loading in Angular
+
+37. forRoot vs forChild
+
+38. Local Storage
+
+39. @ViewChild
+
+40. Http and HttpClient
+
+41. Authentication Guards
+
+42. AOT and JIT
+
+43. Material Design
+
+44. Mini Applications with Angular
+
+45. Interview Questions.
+
+46. NGX Library
+
+47. AG grid
+
+48. Promises
+
+49. Role based Router guards
+
+50. Json web tokens
+
+51. Http Interceptors
+
+52. Deployment of Angular Application in live servers
+
+53. Angular Testing - (using Karma, Jasmine, Protractor)
+
+-----------------------------------------------------------------------------
+ANGULAR SETUP
+• Initializing Angular CLI.
+• Initializing Web page.
+• Set up Visual Studio Code IDE
+
+CREATING ANGULAR APPLICATION
+• Understanding setup files
+• Understanding Architecture of Application
+
+GENERATE COMPONENTS
+• Understanding the decorators
+• Understanding the Selectors
+• Adding Component to the module
+
+GENERATE MODULES
+• Understanding NG Module
+• Declarations
+• Imports
+• Exports
+• Providers
+
+FORMS
+• Angular forms
+• Template-driven forms
+• Validation–built in
+• Validation—custom
+
+DEPENDENCY INJECTIONS AND SERVICES
+• How Angular does dependency injection
+• Services in angular
+• Building a service
+
+REST API CALLS
+• HTTP Calls with Observables
+• Error handling
+
+DIRECTIVES
+• * ngFor
+• * ngIf , Else,ngSwitch
+
+CUSTOM PIPES
+• Understanding Build in pipes
+• Creating Custom pipes
+
+ADVANCES ANGULAR
+• Working with Routing,Lazy Loading
+• Understanding input output methods
+• Understanding Event emitters
+
+C.R.U.D Operations using Angular HTTP
