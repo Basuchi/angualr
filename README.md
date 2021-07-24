@@ -1,2 +1,11 @@
-# angualr
-angualr back data
+# angualr 10
+- Angualr 10 fundaments
+- Array
+- Manupulation of array
+- array.map()
+- array.filter
+- array.shift()
+- array.unshift()
+- array.slice();
+- array.splice()
+- array.forEach
